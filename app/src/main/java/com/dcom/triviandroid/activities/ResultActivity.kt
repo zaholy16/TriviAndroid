@@ -3,10 +3,13 @@ package com.dcom.triviandroid.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.databinding.DataBindingUtil
 import com.dcom.triviandroid.R
+import com.dcom.triviandroid.activities.login.LoginActivity
 import com.dcom.triviandroid.activities.questions.QuestionsActivity
+import com.dcom.triviandroid.databinding.ActivityLoginBinding
 import com.dcom.triviandroid.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
@@ -15,9 +18,10 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val playAgain = findViewById<Button>(R.id.play_again)
+
         val binding = DataBindingUtil.setContentView<ActivityResultBinding>(this, R.layout.activity_result)
         val bundle: Bundle? = intent.extras
+
 
         if(bundle!=null){
 
@@ -26,11 +30,23 @@ class ResultActivity : AppCompatActivity() {
 
             val name: String = bundle.getString("name")?:"nada"
             binding.nameResult.text = name
-        }
 
-        playAgain.setOnClickListener(){
-            val intent = Intent(this, QuestionsActivity::class.java)
-            startActivity(intent)
+            binding.logOut.setOnClickListener(){
+                finish()
+                val intent2= Intent(this, LoginActivity::class.java)
+                startActivity(intent2)
+            }
+
+            binding.playAgain.setOnClickListener(){
+                finish()
+                val intent= Intent(this, QuestionsActivity::class.java).apply {
+                    putExtra("name", name)
+                }
+                startActivity(intent)
+            }
         }
+    }
+    override fun onBackPressed() {
+        moveTaskToBack(true)
     }
 }

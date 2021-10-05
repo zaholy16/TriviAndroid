@@ -80,13 +80,14 @@ class QuestionsActivity : AppCompatActivity() {
                         binding.currentQuestion.text = question.toString() + " / 3 "
                     }
                     else -> {
-                        question += 1
+                        question +=1
+                        finish()
                         val intent = Intent(this, ResultActivity::class.java).apply {
                             putExtra("score", score.toString())
                             putExtra("name", name)
                         }
                         startActivity(intent)
-                        finish()
+
                     }
                 }
             }
@@ -115,7 +116,8 @@ class QuestionsActivity : AppCompatActivity() {
                         binding.currentQuestion.text = question.toString() + " / 3 "
                     }
                     else -> {
-                        question += 1
+                        question +=1
+                        finish()
                         val intent = Intent(this, ResultActivity::class.java).apply {
                             putExtra("score", score.toString())
                             putExtra("name", name)
@@ -147,7 +149,8 @@ class QuestionsActivity : AppCompatActivity() {
                     }
                     else -> {
                         score+=1
-                        question += 1
+                        question +=1
+                        finish()
                         val intent = Intent(this, ResultActivity::class.java).apply {
                             putExtra("score", score.toString())
                             putExtra("name", name)
