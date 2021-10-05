@@ -70,25 +70,34 @@
                         android:id="@+id/option1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text=""
-                        android:fontFamily="@font/alegreya_sans_medium_italic"
-                        android:textSize="16dp" />
+                        android:text="Option 1"
+                        android:backgroundTint="@color/purple_503"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/antic"
+                        android:textSize="20dp" />
 
                     <Button
                         android:id="@+id/option2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text=""
-                        android:fontFamily="@font/alegreya_sans_medium_italic"
-                        android:textSize="16dp" />
+                        android:text="Option 2"
+                        android:backgroundTint="@color/purple_4C0"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/antic"
+                        android:textSize="20dp" />
 
                     <Button
                         android:id="@+id/option3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text=""
-                        android:fontFamily="@font/alegreya_sans_medium_italic"
-                        android:textSize="16dp" />
+                        android:fontFamily="@font/antic"
+                        android:backgroundTint="@color/purple_4D4"
+                        android:text="Option 3"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp" />
                 </LinearLayout>
             </RelativeLayout>
         </ScrollView>

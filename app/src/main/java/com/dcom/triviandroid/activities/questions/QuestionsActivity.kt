@@ -4,13 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.dcom.triviandroid.R
-import com.dcom.triviandroid.activities.ResultActivity
+import com.dcom.triviandroid.activities.results.ResultActivity
 import com.dcom.triviandroid.databinding.ActivityQuestionsBinding
 import com.dcom.triviandroid.models.*
 

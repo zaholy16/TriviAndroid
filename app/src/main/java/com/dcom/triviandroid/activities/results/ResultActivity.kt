@@ -1,15 +1,12 @@
-package com.dcom.triviandroid.activities
+package com.dcom.triviandroid.activities.results
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
 import androidx.databinding.DataBindingUtil
 import com.dcom.triviandroid.R
 import com.dcom.triviandroid.activities.login.LoginActivity
 import com.dcom.triviandroid.activities.questions.QuestionsActivity
-import com.dcom.triviandroid.databinding.ActivityLoginBinding
 import com.dcom.triviandroid.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
@@ -22,7 +19,6 @@ class ResultActivity : AppCompatActivity() {
         val binding = DataBindingUtil.setContentView<ActivityResultBinding>(this, R.layout.activity_result)
         val bundle: Bundle? = intent.extras
         val stringResult: String = getString(R.string.result_result)
-
 
         if(bundle!=null){
 
