@@ -8,121 +8,138 @@
 
     </data>
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <LinearLayout
-                android:id="@+id/linear1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="200dp"
-                    android:src="@drawable/trivia_splash"
-                    android:layout_marginTop="30dp" />
-
-                <TextView
+                <LinearLayout
+                    android:id="@+id/linear1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TriviAndroid"
-                    android:textColor="@color/black"
-                    android:letterSpacing=".14"
-                    android:textAlignment="center"
-                    android:layout_marginTop="5dp"
-                    android:textSize="30dp" />
-            </LinearLayout>
+                    android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/linear2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
-                android:layout_below="@+id/linear1">
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/trivia_splash"
+                        android:layout_marginTop="30dp" />
 
-                <EditText
-                    android:id="@+id/name"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TriviAndroid"
+                        android:textColor="@color/black"
+                        android:letterSpacing=".16"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Type your name"
-                    android:inputType="text"
-                    android:textSize="25dp"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp" />
-            </LinearLayout>
+                    android:layout_marginTop="55dp"
+                    android:layout_below="@+id/linear1">
 
-            <LinearLayout
-                android:id="@+id/linear3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_below="@+id/linear2">
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_name"
+                        android:inputType="textPersonName"
+                        android:textSize="25dp"
+                        android:fontFamily="@font/antic"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp" />
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/buttonLogin"
+                <LinearLayout
+                    android:id="@+id/linear3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="START!"
-                    android:layout_below="@+id/linear2"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/purple_500"/>
-            </LinearLayout>
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/linear2">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:orientation="vertical"
-                android:layout_below="@+id/linear3">
+                    <Button
+                        android:id="@+id/buttonLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_start"
+                        android:layout_below="@+id/linear2"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/alegreya_sans_medium_italic"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/purple_500"/>
+                </LinearLayout>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Students"
-                    android:textAlignment="center"
-                    android:textSize="18dp"
-                    android:textColor="@color/black" />
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/linear3">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Mondragón Delgado Mezly Zahory"
-                    android:textAlignment="center"
-                    android:textSize="18dp"
-                    android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_students"
+                        android:textAlignment="center"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="[20161058]"
-                    android:textAlignment="center"
-                    android:textSize="18dp"
-                    android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Mondragón Delgado Mezly Zahory"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/black" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ramírez García Carlos Antonio"
-                    android:textAlignment="center"
-                    android:textSize="18dp"
-                    android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="[20161058]"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/black" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="[20164518]"
-                    android:textAlignment="center"
-                    android:textSize="18dp"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ramírez García Carlos Antonio"
+                        android:textAlignment="center"
+                        android:textSize="14dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="[20164518]"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
     </RelativeLayout>
 </layout>

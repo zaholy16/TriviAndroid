@@ -21,12 +21,13 @@ class ResultActivity : AppCompatActivity() {
 
         val binding = DataBindingUtil.setContentView<ActivityResultBinding>(this, R.layout.activity_result)
         val bundle: Bundle? = intent.extras
+        val stringResult: String = getString(R.string.result_result)
 
 
         if(bundle!=null){
 
             val score: String = bundle.getString("score")?:"nada"
-            binding.result.text = score
+            binding.result.text = stringResult + score
 
             val name: String = bundle.getString("name")?:"nada"
             binding.nameResult.text = name

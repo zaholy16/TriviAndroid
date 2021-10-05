@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TriviAndroid</string>
+
+    <!-- Splash -->
+    <string name="splash_phrases">¡Desafia tus conocimientos!</string>
+
+    <!-- Login -->
+    <string name="login_name">Escribe tu nombre</string>
+    <string name="login_start">¡Empecemos!</string>
+    <string name="login_students">Alumnos</string>
+
+    <!-- Questions -->
+    <string name="question_1">¿Son tres métodos que pertenecen al ciclo de vida de un fragmento?</string>
+    <string name="question_2">¿Para que sirve el manifest.xml?</string>
+    <string name="question_3">¿Que es Gradle?</string>
+
+    <!-- Options Question 1 -->
+    <string name="option_1Q1">onCreate(), onCreateView(), onStart()</string>
+    <string name="option_2Q1">onPush(), onLaunch(), onGo()</string>
+    <string name="option_3Q1">onFragment(), onRun(), onPause()</string>
+
+    <!-- Options Question 2 -->
+    <string name="option_1Q2">Para manifestar los terminos y condiciones de la aplicación</string>
+    <string name="option_2Q2">Para describir la información esencial de la aplicación, herramientas,
+        sistema operativo Android, permisos</string>
+    <string name="option_3Q2">Para manifestar el contrato de suscripción a nuestra
+        aplicación en caso de que sea de paga.</string>
+
+    <!-- Options Question 3 -->
+    <string name="option_1Q3">Brindar herramientas para crear juegos interactivos</string>
+    <string name="option_2Q3">Archivo para recibir el response de una API.</string>
+    <string name="option_3Q3">Herramienta que permite la automatización de compilación
+        de código abierto, la cual se encuentra centrada en la flexibilidad y el rendimiento. </string>
+
+    <!-- Results -->
+    <string name="result_playAgain">Jugar otravez</string>
+    <string name="result_goBack">Cerrar Sesión</string>
+    <string name="result_result">Puntaje final: </string>
+
+    <string name="name_empty">Escribe tu nombre porfavor :/</string>
+
+
+</resources>

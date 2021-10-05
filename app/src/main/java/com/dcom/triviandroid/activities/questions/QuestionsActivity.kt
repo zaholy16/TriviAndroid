@@ -28,19 +28,40 @@ class QuestionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questions)
 
+        val stringQ1: String = getString(R.string.question_1)
+        val stringQ2: String = getString(R.string.question_2)
+        val stringQ3: String = getString(R.string.question_3)
+
+        val stringOp1Q2: String = getString(R.string.option_1Q2)
+        val stringOp2Q2: String = getString(R.string.option_2Q2)
+        val stringOp3Q2: String = getString(R.string.option_3Q2)
+
+        val stringOp1Q3: String = getString(R.string.option_1Q3)
+        val stringOp2Q3: String = getString(R.string.option_2Q3)
+        val stringOp3Q3: String = getString(R.string.option_3Q3)
+
         binding = DataBindingUtil.setContentView<ActivityQuestionsBinding>(this,
             R.layout.activity_questions)
 
         val quizList1 = mutableListOf<Question1>(
-            Question1("¿Comida favorita?", "Sopas", "Tacos", "Tamales")
+            Question1(stringQ1,
+                "onCreate(), onCreateView(), onStart()",
+                "onPush(), onLaunch(), onGo()",
+                "onFragment(), onRun(), onPause()")
         )
 
         val quizList2 = mutableListOf<Question2>(
-            Question2("¿Musica favorita?", "Ranchero", "Kpop", "Rock")
+            Question2(stringQ2,
+                stringOp1Q2,
+                stringOp2Q2,
+                stringOp3Q2)
         )
 
         val quizList3 = mutableListOf<Question3>(
-            Question3("¿Color favorito?", "Negro", "Blanco", "Azul")
+            Question3(stringQ3,
+                stringOp1Q3,
+                stringOp2Q3,
+                stringOp3Q3)
         )
 
         val bundle: Bundle? = intent.extras

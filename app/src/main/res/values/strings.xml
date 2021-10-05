@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">TriviAndroid</string>
+
+    <!-- Splash -->
+    <string name="splash_phrases">Challenge your knowledge!</string>
+
+    <!-- Login -->
+    <string name="login_name">Type your name</string>
+    <string name="login_start">START!</string>
+    <string name="login_students">Students</string>
+    <string name="name_empty">Type your name please :/</string>
+
+    <!-- Questions -->
+    <string name="question_1">Are there 3 methods that belong to the life cycle of a fragment?</string>
+    <string name="question_2">What is Manifest.xml for?</string>
+    <string name="question_3">What is gradle?</string>
+
+    <!-- Options Question 1 -->
+    <string name="option_1Q1">onCreate(), onCreateView(), onStart()</string>
+    <string name="option_2Q1">onPush(), onLaunch(), onGo()</string>
+    <string name="option_3Q1">onFragment(), onRun(), onPause()</string>
+
+    <!-- Options Question 2 -->
+    <string name="option_1Q2">To express the terms and conditions of the application.</string>
+    <string name="option_2Q2">To describe the essential information of the application, tools,
+        Android operating system, permissions.</string>
+    <string name="option_3Q2">To manifest the subscription contract to our application in case it is paid</string>
+
+    <!-- Options Question 3 -->
+    <string name="option_1Q3">Provide tools to create interactive games</string>
+    <string name="option_2Q3">File to receive the response of an API</string>
+    <string name="option_3Q3">Manage user interaction through the use of a graphical interface,
+        each screen of an application is an activity</string>
+
+    <!-- Results -->
+    <string name="result_playAgain">Click to play again</string>
+    <string name="result_goBack">Log Out</string>
+    <string name="result_result">Total Score: </string>
+
 </resources>

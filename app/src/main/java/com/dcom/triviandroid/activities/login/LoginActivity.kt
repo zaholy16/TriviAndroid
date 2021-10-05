@@ -17,11 +17,12 @@ class LoginActivity : AppCompatActivity() {
         val buttonLogin = findViewById<Button>(R.id.buttonLogin)
         val nameLogin = findViewById<EditText>(R.id.name)
         val name = nameLogin.text
+        val stringName: String = getString(R.string.name_empty)
 
         buttonLogin.setOnClickListener(){
 
             if (nameLogin.text.isEmpty())
-                Toast.makeText(this, "Put your name please :)", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, stringName, Toast.LENGTH_LONG).show()
             else{
                 val intent = Intent(this, QuestionsActivity::class.java).apply {
                     putExtra("name", name.toString())
