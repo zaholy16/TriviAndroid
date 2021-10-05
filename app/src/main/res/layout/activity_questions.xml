@@ -11,63 +11,86 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/linear1"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <TextView
-                android:id="@+id/currentQuestion"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="35dp"
-                android:layout_marginTop="30dp"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:text="1 / 3"/>
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/question"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="35dp"
-                android:layout_marginTop="30dp"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:text="¿do you know BTS?"/>
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/currentQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="1 / 3"
+                        android:fontFamily="@font/aldrich"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="35dp" />
 
-        <LinearLayout
-            android:id="@+id/linear2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/linear1"
-            android:orientation="vertical"
-            android:layout_marginTop="30dp">
+                    <TextView
+                        android:id="@+id/question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="serif-monospace"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/option1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Option 3"
-                android:textSize="18dp" />
+                </LinearLayout>
 
-            <Button
-                android:id="@+id/option2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Option 3"
-                android:textSize="18dp" />
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp">
 
-            <Button
-                android:id="@+id/option3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Option 3"
-                android:textSize="18dp" />
-        </LinearLayout>
+                    <Button
+                        android:id="@+id/option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/alegreya_sans_medium_italic"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/alegreya_sans_medium_italic"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/alegreya_sans_medium_italic"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
     </RelativeLayout>
 </layout>
